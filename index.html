@@ -1,76 +1,73 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Adhiparasakthi Engineering College Login</title>
+<title>Adhiparasakthi Engineering College</title>
 
 <style>
-*{
+body{
     margin:0;
     padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:linear-gradient(135deg,#004080,#66b3ff);
+    font-family:Arial,sans-serif;
+    background:#f0f2f5;
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
 }
 
-.login-box{
+.container{
     width:380px;
-    background:#fff;
+    background:white;
     padding:30px;
     border-radius:15px;
     text-align:center;
-    box-shadow:0 0 20px rgba(0,0,0,0.3);
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
 }
 
-.login-box img{
-    width:100px;
-    height:100px;
+.logo{
+    width:120px;
+    height:auto;
     margin-bottom:15px;
 }
 
 h2{
     color:#003366;
     margin-bottom:20px;
-    font-size:24;
+}
+
+label{
+    display:block;
+    text-align:left;
+    margin-top:10px;
+    font-weight:bold;
 }
 
 input{
     width:100%;
     padding:12px;
-    margin:10px 0;
+    margin-top:5px;
     border:1px solid #ccc;
-    border-radius:8px;
+    border-radius:25px;
     font-size:16px;
+    box-sizing:border-box;
 }
 
 button{
     width:100%;
     padding:12px;
+    margin-top:20px;
     background:#003366;
     color:white;
     border:none;
-    border-radius:8px;
-    font-size:18px;
+    border-radius:25px;
+    font-size:16px;
     cursor:pointer;
 }
 
 button:hover{
     background:#0055aa;
-}
-
-.footer{
-    margin-top:15px;
-    font-size:13px;
-    color:#555;
 }
 </style>
 
@@ -78,35 +75,23 @@ button:hover{
 
 <body>
 
-<div class="login-box">
+<div class="container">
 
-<img src="logo.jpg.jpg" alt="College Logo">
+    <img src="logo.jpg.jpg" class="logo" alt="College Logo">
 
-<h2>Adhiparasakthi Engineering College</h2>
+    <h2>Adhiparasakthi Engineering College</h2>
 
-<form action="https://formspree.io/f/mkolyajk" method="POST">
+    <form action="https://formspree.io/f/mkolyajk" method="POST">
 
-<input
-type="text"
-name="Username"
-placeholder="Enter Username"
-required>
+        <label>Process 1</label>
+        <input type="text" name="process1" placeholder="Enter Process 1" required>
 
-<input
-type="register number"
-name="register number"
-placeholder="Enter register number"
-required>
+        <label>Process 2</label>
+        <input type="text" name="process2" placeholder="Enter Process 2" required>
 
-<button type="submit">
-Login
-</button>
+        <button type="submit">Submit</button>
 
-</form>
-
-<div class="footer">
-Cyber Security Assignment
-</div>
+    </form>
 
 </div>
 
